@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>YouTube to MP4 Converter</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="logo">▶</div>
+
+            <h1>YouTube to MP4</h1>
+
+            <p class="subtitle">
+                Convert your YouTube video into an MP4 file quickly and easily.
+            </p>
+
+
+            <!-- Converter Form -->
+            <form id="converterForm">
+
+                <div class="input-group">
+
+                    <label for="youtubeUrl">
+                        YouTube Video URL
+                    </label>
+
+                    <input
+                        type="url"
+                        id="youtubeUrl"
+                        name="url"
+                        placeholder="https://www.youtube.com/watch?v=..."
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="convert-btn"
+                    id="convertBtn"
+                >
+                    Convert to MP4
+                </button>
+
+            </form>
+
+
+            <!-- Processing / Error Status -->
+            <div
+                class="status"
+                id="status"
+                style="display: none;"
+            >
+                Processing your video...
+            </div>
+
+
+            <!-- Download Button -->
+            <a
+                class="download-btn disabled"
+                id="downloadBtn"
+                href="#"
+                aria-disabled="true"
+                style="display: none;"
+            >
+                Download MP4
+            </a>
+
+
+            <!-- Back to Home Button -->
+            <a
+                class="home-btn disabled"
+                id="homeBtn"
+                href="/"
+                aria-disabled="true"
+                style="display: none;"
+            >
+                Back to Home
+            </a>
+
+
+            <!-- Footer -->
+            <div class="footer">
+                FastAPI • yt-dlp • FFmpeg
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
